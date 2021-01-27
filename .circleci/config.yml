@@ -2,4 +2,4 @@ version: 2.1
 jobs:
   build:
     steps:
-      ls
+      echo: Hello World
