@@ -13,9 +13,10 @@ jobs:
   lsdir:
     docker:
       - image: circleci/python:3.9.0
+    working_directory: ~/flask
     steps:
       - checkout
-      - run: cat flask/Dockerfile
+      - run: ls
 
 workflows:
   allinall:
