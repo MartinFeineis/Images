@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.9.0
-    working_directory: flask
+    build-dir: flask
     steps:
       - checkout
       - setup_remote_docker:
