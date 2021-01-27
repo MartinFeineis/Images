@@ -8,5 +8,7 @@ jobs:
       - run: ls -d */
 
   lsdir:
+    docker:
+      - image: circleci/python:3.9.0
     steps:
       - run: cat flask/Dockerfile
