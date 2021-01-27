@@ -16,6 +16,7 @@ jobs:
     working_directory: ~/flask
     steps:
       - checkout
+      - run: pwd
       - run: ls
 
 workflows:
