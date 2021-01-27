@@ -6,3 +6,7 @@ jobs:
     steps:
       - checkout
       - run: ls -d */
+
+  lsdir:
+    steps:
+      - run: cat flask/Dockerfile
