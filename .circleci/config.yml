@@ -16,7 +16,10 @@ jobs:
       - checkout
       - run: pwd
       - run: ls -lah ~
+      - run: ls -lah ~/project/flask
+      - run: ls -lah project
       - run: ls -lah
+      - run: ls -lah flask
       - run: ls -lah ..
 
 workflows:
