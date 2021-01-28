@@ -12,7 +12,6 @@ jobs:
   lsdir:
     docker:
       - image: cimg/base:2020.01
-    working_directory: ~/flask
     steps:
       - checkout
       - run: pwd
