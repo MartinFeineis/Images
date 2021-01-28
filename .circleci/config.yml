@@ -15,8 +15,7 @@ jobs:
     steps:
       - checkout
       - run: pwd
-      - run: ls -lah ~/flask
-      - run: ls -lah ~/flask/flask
+      - run: ls -lah ~
       - run: ls -lah
       - run: ls -lah ..
 
