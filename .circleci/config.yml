@@ -3,12 +3,11 @@ jobs:
   build:
     docker:
       - image: cimg/base:2020.01
-    working_directory: ~/flask/flask
     steps:
       - checkout
       - setup_remote_docker:
           version: 19.03.13
-      - run: docker build -t pyflask:latest -f flask/Dockerfile .
+      - run: cd flask && docker build -t pyflask:latest -f flask/Dockerfile .
 
   lsdir:
     docker:
